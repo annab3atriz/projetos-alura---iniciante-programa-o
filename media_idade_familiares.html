@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+
+	function mostra(texto) {
+		document.write(texto);
+		pulaLinha();
+	}
+
+	// média dos familiares
+	var totalFamiliares = parseInt(prompt("Quantas pessoas tem a sua família"));
+
+	// se tiver 5 familiares, temos que pedir prompt de idade 5 vezes
+
+	
+	//repetir essa pergunta 5 vezes
+	var totalIdades = 0; //não pode ser dentro do while ou do for, se não vai zerar toda vez que o código repetir
+
+	for (var i = 1; i <= totalFamiliares; i++) {
+
+		var idade = parseInt(prompt("Informe a idade do familiar"));
+		totalIdades = totalIdades + idade;
+	}
+
+	mostra ("A média das idades da sua família é ");
+	mostra(totalIdades/totalFamiliares);
+
+</script>
